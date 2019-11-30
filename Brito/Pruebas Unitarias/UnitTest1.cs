@@ -39,15 +39,13 @@ namespace Pruebas_Unitarias
         {
             //Organizar
             Company comp = new Company("Alfa", 2000);
-            double valoresperado = 2500;
+            string valoresperado = ("Beta");
             //Actuar
             comp.ChangeName("Beta");
-            double valorobtenido = comp.SaveProject;
+            string valorobtenido = comp.Name;
             //Afirmar
             Assert.AreEqual(valoresperado, valorobtenido);
         }
-
-
 
     }
 }
